@@ -25,11 +25,13 @@
 template<class T>
 class LinkedQueue {
   public:
+  
     //@desc default constructor, initializes default 
     //      for private memebers
     //@post private members have known default values
     //      rids class of garbage values.
     LinkedQueue();
+  
     //@desc  copy constructor, arguement queue's data 
     //       is copied to 'this' queue 
     //@pre   queue to copy must have size_ > 0, 
