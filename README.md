@@ -25,6 +25,7 @@ on a college campus for interview preparation, now open for public use.
 g++ -g -std=c++11 -Wall -I -c test_queue_stack.cpp -o test_linked_queue.o
 g++ -g -std=c++11 -Wall -o ./test_queue_stack_implementation test_linked_queue.o 
                                   -I.-L/usr/lib -L/usr/local/lib -lm 
+
 Or Build with 'make all' command (for this convenience a make file has been include). 
 ***
 ### Modifications 
