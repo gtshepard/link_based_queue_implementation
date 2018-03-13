@@ -80,12 +80,12 @@ is wasteful in terms of memory usage.
 A link based implementation was chosen for this design because the number entries cannot be predetermined.
 ***
 ### Operation Runtimes
-IsEmpty()  - Runtime O(1)
-Enqueue()     - Runtime O(1)
-Dequeue()      - Runtime O(1) 
-Front()     - Runtime O(1)         
-Erase()    - Runtime O(n)
-Copy()     - Runtime O(n)
+* IsEmpty()  - Runtime O(1)
+* Enqueue()     - Runtime O(1)
+* Dequeue()      - Runtime O(1) 
+* Front()     - Runtime O(1)         
+* Erase()    - Runtime O(n)
+* Copy()     - Runtime O(n)
 ***
 ### Closing Notes
 Program was compiled with g++ and tested on Fedora Linux 24. This program has not been tested on other 
