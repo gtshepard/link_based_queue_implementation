@@ -25,16 +25,18 @@
 #define TEST_FAIL(method_name) std::cerr << method_name << " Test Failed" << std::endl;
 #define TEST_SUCCESS(method_name) std::cerr << method_name << " Test Successful" << std::endl;
 #define LOG std::cerr << "Line "<< __LINE__  << " was executed"<< std::endl;
+//@desc format print in stanard output (terminal)
+//@post line printed to standard output
 void Format(){
   std::cout << "---------------------------------------" << std:: endl;
 }
-//@desc compares to queues to see if they are equal. 
-//      used to test assignment and copy operator
-//@pre   reponsible for saving queues data before call to IsEqual
-//@param LinkedQueue<T>& queue_one, a queue to compare
-//@param LinkedQueue<T>& queue_two, a queue to compare
+//@desc   compares to queues to see if they are equal. 
+//        used to test assignment and copy operator
+//@pre    reponsible for saving queues data before call to IsEqual
+//@param  LinkedQueue<T>& queue_one, a queue to compare
+//@param  LinkedQueue<T>& queue_two, a queue to compare
 //@return false if not equal. else true
-//@post the data in each queue has been completely deleted 
+//@post   the data in each queue has been completely deleted 
 template<class T>
 bool IsEqual(LinkedQueue<T>& queue_one, LinkedQueue<T>& queue_two){
  
@@ -60,6 +62,9 @@ bool IsEqual(LinkedQueue<T>& queue_one, LinkedQueue<T>& queue_two){
   queue_two.Erase(); //completely delete queue two 
   return true; //equal 
 } //end IsEqual
+
+//@desc tests essential operations of LinkedQueue class
+//@post each operation passes or fails a test 
 void TestQueue(){
   Format(); //format standard output (Terminal)
   
@@ -147,10 +152,9 @@ void TestQueue(){
     TEST_SUCCESS("Assignment Operator"); //print test result to standard output (terminal) 
   }
   Format(); //format standard output (Terminal)
-}
+}//end TestQueue
 int main(){
 
   TestQueue();  //tests queue implementation
   return 0;
-}
-
+}//end main
