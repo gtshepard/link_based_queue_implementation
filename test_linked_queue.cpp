@@ -13,8 +13,9 @@
 //
 //  Usage :         ./test_linked_queue_implementation
 //
-//  Build with : g++ -g -std=c++11 -Wall -I.   -c test_queue.cpp -o test_queue.o
-//               g++ -g -std=c++11 -Wall -o ./test_queue test_queue.o  -I.  -L/usr/lib -L/usr/local/lib -lm    
+//  Build with : g++ -g -std=c++11 -Wall -I.   -c test_linked_queue.cpp -o test_linked_queue.o
+//               g++ -g -std=c++11 -Wall -o ./test_linled_queue_implementation test_linked_queue.o  
+//                                        -I. -L/usr/lib -L/usr/local/lib -lm    
 //               Or for convience use Make all command (make file included)
 //
 //  Modifications : no modifications since creation date.
